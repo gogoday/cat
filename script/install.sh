@@ -11,5 +11,5 @@ git clone ${git} ./
 git checkout -b release origin/release
 npm i 
 npm i pm2 -g
-pm2 start app.js
+npm run admin
 
