@@ -9,7 +9,8 @@ cd ${projectPath}
 # clone
 git clone ${git} ./
 git checkout -b release origin/release
-npm i 
-npm i pm2 -g
-npm run admin
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm i 
+cnpm i pm2 -g
+cnpm run admin
 
