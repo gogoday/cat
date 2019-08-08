@@ -1,6 +1,6 @@
 #! /bin/bash
 echo 'start install ...'
-branch='$1'
+branch="$1"
 projectPath='/data/cat/'
 #projectPath='/Users/sampsonwang/data/cat/'
 git='https://github.com/gogoday/cat.git'
