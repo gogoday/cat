@@ -8,5 +8,5 @@ else
 fi
 
 git pull origin ${env}
-pm2 restart cat
+pm2 restart cat-admin
 
