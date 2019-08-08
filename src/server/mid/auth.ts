@@ -7,7 +7,7 @@ class Auth {
       let user;
       if (token) {
         token = token.split(/\s/)[1];
-        user = new Buffer(token, 'base64')
+        user = Buffer.from(token, 'base64')
         user = user.toString('ascii');
         user = user.split(':')[0];
       }

@@ -3,6 +3,6 @@ import Service from './service';
 const router = new Router();
 const server = new Service();
 
-router.get('/admin/git_pull', server.getPull())
+router.get('/admin/git_pull', server.gitPull())
 
 export default router

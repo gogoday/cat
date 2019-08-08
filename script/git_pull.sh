@@ -6,7 +6,7 @@ if [ $1 ];then
 else
 	env="dev"
 fi
-
+echo "env: ${env}"
 git pull origin ${env}
 pm2 restart cat-admin
 
