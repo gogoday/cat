@@ -1,19 +1,8 @@
 import * as Router from 'koa-router'
-import * as child_process from 'child_process'
-import config from '../config'
+import Service from './service';
 const router = new Router();
+const server = new Service();
 
-router.get('/admin/git_pull', async (ctx, next) => {
-  console.log('start git pull ... ')
-  await git_pull();
-  ctx.body = 'ok'
-})
-
-async function git_pull() {
-  
-  const result = await child_process.execFileSync(config.gitPullSh)
-  console.log(result)
-
-}
+router.get('/admin/git_pull', server.getPull())
 
 export default router
