@@ -1,6 +1,12 @@
 #! /bin/bash
 echo 'start git pull ...'
 cd /data/cat
-git pull origin $1
+if [ $1 ];then
+  env="$1"
+else
+	env="dev"
+fi
+
+git pull origin ${env}
 pm2 restart cat
 
