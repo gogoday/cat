@@ -8,7 +8,8 @@
     "admin-watch": "pm2 start ./dist/server/admin/index.js --name cat-dev --watch",
     "admin": "pm2 start ./dist/server/admin/index.js --name cat-admin",
     "build": "./node_modules/.bin/tsc",
-    "watch": "./node_modules/.bin/tsc --watch"
+    "watch": "./node_modules/.bin/tsc --watch",
+    "start": "pm2 start ./dist/server/app.js --name cat"
   },
   "repository": {
     "type": "git",
