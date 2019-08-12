@@ -15,4 +15,5 @@ cnpm i
 cnpm run build
 cnpm i pm2 -g
 cnpm run admin
+cnpm start
 
