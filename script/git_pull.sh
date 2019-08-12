@@ -8,5 +8,6 @@ else
 fi
 echo "env: ${env}"
 git pull origin ${env}
+npm run build
 pm2 restart cat
 
