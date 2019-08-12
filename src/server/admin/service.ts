@@ -13,5 +13,10 @@ class Service {
       ctx.body = result.toString('utf-8')
     }
   }
+  index() {
+    return async (ctx, next) => {
+      ctx.body = '<a href="/admin/git_pull" >git pull cat</a>'
+    }
+  }
 }
 export default Service
