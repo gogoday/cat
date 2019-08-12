@@ -1,5 +1,4 @@
 const http = require('http')
-http.creatServer((req, res) => {
-
+http.createServer((req, res) => {
   res.end('ok');
 }).listen(8082)

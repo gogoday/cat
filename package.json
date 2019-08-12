@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "./node_modules/.bin/tsc --watch",
     "admin-watch": "pm2 start ./dist/server/admin/index.js --name cat-dev --watch",
     "admin": "pm2 start ./dist/server/admin/index.js --name cat-admin",
     "build": "./node_modules/.bin/tsc",
